@@ -39,10 +39,10 @@ data Game =
     , gameState :: State
     , gamePlayer :: Player
     }
-  deriving (Show)
+  deriving (Eq, Show)
 
 emptyBoard :: Board
-emptyBoard = zip (repeat Nothing) [0 .. 8]
+emptyBoard = zip (repeat Nothing) [0 .. n * n - 1]
 
 emptyGame :: Game
 emptyGame = Game emptyBoard Running PlayerX

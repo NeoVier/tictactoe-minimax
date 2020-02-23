@@ -1,5 +1,6 @@
 module Logic
   ( playMove
+  , checkEnd
   ) where
 
 import Data.Maybe (isJust)
